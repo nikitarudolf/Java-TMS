@@ -8,5 +8,9 @@ public class Main {
         int a = 5;
         int b = 10;
         System.out.println(a*b);
+
+        for (int i =0; i<a*b; i++) {
+            System.out.println(i);
+        }
     }
 }
