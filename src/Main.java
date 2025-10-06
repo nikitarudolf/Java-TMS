@@ -11,6 +11,7 @@ public class Main {
 
         for (int i =0; i<a*b; i++) {
             System.out.println(i);
+            System.out.println(a*i);
         }
     }
 }
