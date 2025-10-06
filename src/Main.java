@@ -5,5 +5,8 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.println("Hello world!");
         System.out.println("Second commit");
+        int a = 5;
+        int b = 10;
+        System.out.println(a*b);
     }
 }
