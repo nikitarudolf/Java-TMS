@@ -18,5 +18,34 @@ public class Main {
             System.out.println(a^i);
             System.out.println(a*b);
         }
+
+        class Car {
+            int color;
+            double maxSpeed;
+            int mileage;
+
+            public int getColor;
+            public double getMaxSpeed;
+            public int getMileage;
+
+            public int getColor() {
+                return color;
+            }
+
+            public double getMaxSpeed() {
+                return maxSpeed;
+            }
+
+            public int getMileage() {
+                return mileage;
+            }
+        }
+
+        Car bmw = new Car();
+        bmw.color = 12245;
+        bmw.maxSpeed = 243;
+        bmw.mileage = 76543;
+
+
     }
 }
