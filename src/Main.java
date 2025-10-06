@@ -13,5 +13,10 @@ public class Main {
             System.out.println(i);
             System.out.println(a*i);
         }
+
+        for (int i =0; i<5; i++) {
+            System.out.println(a^i);
+            System.out.println(a*b);
+        }
     }
 }
