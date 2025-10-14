@@ -21,7 +21,7 @@ public class Lesson1Homework {
 
     public static int sumTwoDigits() {
         int n = 26;
-    return n / 10 + n % 10;
+        return n / 10 + n % 10;
     }
 
     public static int sumThreeDigits() {
@@ -38,7 +38,7 @@ public class Lesson1Homework {
         int q, w;
         q = 21;
         w = 8;
-        return (q + " / " + w + " = " + q/w + " и " + q % w + " в остатке");
+        return (q + " / " + w + " = " + q / w + " и " + q % w + " в остатке");
     }
 
     public static void swapNumbers() {

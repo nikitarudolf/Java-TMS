@@ -12,12 +12,12 @@ public class LessonHomework {
         double[] arr = new double[in.nextInt()];
 
         fillArray(arr);
-        printArr(arr);                // 1
-        findMinMaxElement(arr);       // 2
-        findMinMaxIndex(arr);         // 3
-        findZero(arr);                // 4
-        swapElements(arr);            // 5
-        isIncreasingSequence(arr);    // 6
+        //printArr(arr);                // 1
+        //findMinMaxElement(arr);       // 2
+        //findMinMaxIndex(arr);         // 3
+        //findZero(arr);                // 4
+        //swapElements(arr);            // 5
+        //isIncreasingSequence(arr);    // 6
         incrementArray();             // *
     }
 
