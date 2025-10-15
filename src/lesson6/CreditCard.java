@@ -11,7 +11,11 @@ class CreditCard {
     }
 
     public void addCredits(int a) {
-        this.creditsAmount += a;
+        if(a>0) {
+            this.creditsAmount += a;
+            return;
+        }
+        System.out.println("Неверное значение");
     }
 
     public void withdrawCredits(int a) {
