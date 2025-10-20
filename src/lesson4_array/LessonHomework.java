@@ -46,8 +46,8 @@ public class LessonHomework {
 
     public static void printArr(double[] array) {
         System.out.println("Вывод массива в прямом порядке:");
-        for(int i = 0; i<array.length; i++) {
-            System.out.println(array[i]);
+        for (double v : array) {
+            System.out.println(v);
         }
         System.out.println("Вывод массива в обратном порядке:");
         for(int i = array.length-1; i>=0; i--) {
