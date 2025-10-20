@@ -25,4 +25,5 @@ public class Patient extends Person {
         super(n, s, bY);
         this.treatmentPlan = plan;
     }
+
 }

@@ -12,26 +12,17 @@ package lesson7_oop;
 //Если план лечения имеет любой другой код – назначить терапевта и выполнить метод
 //лечить.
 
-//Создать класс Apple и добавить в него поле color с модификатором доступа private и
-//инициализировать его. В методе main другого класса создать объект Apple, и не
-//используя сеттеры изменить значение поля color
+
 
 
 public class LessonHomework {
+    static MedClinic clinic = new MedClinic();
     public static void main(String[] args) {
-
-
-    Patient patient = new Patient("Egor", "Sokolov", 2001, 1);
-    Surgeon surgeon = new Surgeon("Aleksandr", "Kovalev", 1981);
-    Dentist dentist = new Dentist("Elena", "Ivanova", 1991);
-    Therapist therapist = new Therapist("Irina", "Grigorieva", 1980);
-
-    therapist.setDoctor(patient,surgeon,dentist);
-
-
-
+    clinic.medClinic();
 
     }
+
+
 }
 
 
