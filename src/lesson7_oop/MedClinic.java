@@ -1,7 +1,5 @@
 package lesson7_oop;
 
-import java.util.Scanner;
-
 public class MedClinic
 {
     public void medClinic() {
@@ -11,12 +9,7 @@ public class MedClinic
         Dentist dentist = new Dentist("Elena", "Ivanova", 1991);
         Therapist therapist = new Therapist("Irina", "Grigorieva", 1980);
 
-        therapist.setDoctor(patient,surgeon,dentist);
-
-
-
-
-
+        therapist.setDoctorAndHeal(patient,surgeon,dentist);
 
     }
 }

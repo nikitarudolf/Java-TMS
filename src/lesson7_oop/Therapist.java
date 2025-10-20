@@ -1,5 +1,4 @@
 package lesson7_oop;
-import java.awt.*;
 import java.util.Scanner;
 
 public class Therapist extends Doctor {
@@ -10,7 +9,7 @@ public class Therapist extends Doctor {
         System.out.println("Терапевт провел лечение медикаментами");
     }
 
-    public void setDoctor(Patient patient, Surgeon surgeon, Dentist dentist) {
+    public void setDoctorAndHeal(Patient patient, Surgeon surgeon, Dentist dentist) {
         while(true) {
             System.out.println("Что вас беспокоит?\n1) Меня нужно прооперировать\n2) Мне болит зуб\n3) Нужно лечение терапевта\n0) Я здоров");
             if(!in.hasNextInt()) {
