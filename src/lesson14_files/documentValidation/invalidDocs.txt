@@ -1,0 +1,4 @@
+invalid74526485 [Doc name must start with "docnum" or "contract" keyword]
+docnum!hgtryfb1 [Doc name must contain only letters or digits]
+docnumShort [Doc length must be 15 characters]
+contractLOOOOOOONG [Doc length must be 15 characters]

@@ -19,7 +19,7 @@ public class Verificator {
         boolean hasDigits = false;
         for(char c : password.toCharArray()) {
             if(c == ' ')  throw new WrongPasswordException("Password cannot contain spaces");
-            if (48 < c && c < 57 ) {
+            if (48 <= c && c <= 57 ) {
                 hasDigits = true;
             }
         }
