@@ -31,6 +31,7 @@ public class LessonHomework  {
         manager.filterStudents();
         System.out.println("--".repeat(50));
         manager.printStudents();
+
         manager.printStudentsByCourse(2);
     }
     public static void manageAnimalsCollection() {
