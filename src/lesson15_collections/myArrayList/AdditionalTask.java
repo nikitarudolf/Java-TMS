@@ -1,4 +1,5 @@
 package lesson15_collections.myArrayList;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -6,6 +7,7 @@ import java.util.Scanner;
 public class AdditionalTask {
     public static void main(String[] args) {
         listMenu(chooseList());
+
     }
 
     public static void clearConsole() {

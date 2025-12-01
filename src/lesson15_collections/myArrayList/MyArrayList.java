@@ -1,10 +1,14 @@
 package lesson15_collections.myArrayList;
+// изначально выделить capacity а в size() записывать сколько непосредственно элементов добавлено в ArrayList
+// если capacity 100, то size ->100 (80) он срочно не позволяя дойти до грани расширяемого массива выделяет еще память
+// с запасом (изначальная память * 1.2)
+// + getFirst() , getLast()
 
 public class MyArrayList<T> {
     private T [] array;
 
-    private int objectsCount;
     private int size;
+    private int capacity;
 
 
 
@@ -14,26 +18,26 @@ public class MyArrayList<T> {
 
     public MyArrayList(int arrayLength) {
         this.array = (T[]) new Object[arrayLength];
-        this.size = arrayLength;
+        this.capacity = arrayLength;
     }
 
     public void add(T obj) {
-        if (objectsCount >= array.length) {
+        if (size >= array.length) {
             int newCapacity = array.length * 3 / 2 + 1;
             T[] newArray = (T[]) new Object[newCapacity];
-            System.arraycopy(array, 0, newArray, 0, objectsCount);
+            System.arraycopy(array, 0, newArray, 0, size);
             array = newArray;
-            this.size = newCapacity;
+            this.capacity = newCapacity;
         }
 
-        array[objectsCount++] = obj;
+        array[size++] = obj;
     }
 
     public void remove(int index) {
-        while (index < objectsCount) {
+        while (index < size) {
             array[index] = array[index++];
         }
-        objectsCount--;
+        size--;
     }
     public T get(int index) {
         return array[index];
@@ -50,18 +54,18 @@ public class MyArrayList<T> {
     }
 
     public void clear() {
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < capacity; i++) {
             array[i] = null;
         }
-        objectsCount = 0;
+        size = 0;
     }
 
     public void print() {
-        if(objectsCount == 0 ) {
+        if(size == 0 ) {
             System.out.println("List is empty");
             return;
         }
-        for (int index =0; index < objectsCount; index++) {
+        for (int index = 0; index < size; index++) {
             System.out.println(array[index].toString());
         }
     }

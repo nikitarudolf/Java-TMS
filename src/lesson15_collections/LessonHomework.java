@@ -7,7 +7,7 @@ public class LessonHomework  {
         deleteDuplicatesViaCollection(); // 1
         manageAnimalsCollection(); // 2
         manageStudents(); // 3
-
+        
 
     }
     public static void manageStudents() {
